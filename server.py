@@ -15,7 +15,7 @@ def sent_analyzer():
         function. The output returned shows the label and its confidence 
         score for the provided text.
     '''
-     text_to_analyze = request.args.get('textToAnalyze')
+    text_to_analyze = request.args.get('textToAnalyze')
     response = sentiment_analyzer(text_to_analyze)
     label = response['label']
     score = response['score']
